@@ -76,7 +76,41 @@ namespace AppRapPhim
         private void Button2_Click(object sender, EventArgs e)
         {
             //tính tiền
-            //
+            double sum = 0;
+            foreach (Button btnGhe in pnGhe.Controls.OfType<Button>().Where(x => x.BackColor == Color.Blue))
+            {
+                sum += TinhTien(int.Parse(btnGhe.Text));
+                btnGhe.BackColor = Color.Yellow;
+            }
+            txtTongTien.Text = sum.ToString();
+        }
+
+        private double TinhTien(int soGhe)
+        {
+            if (soGhe <= 5)
+            {
+                return 5000;
+            }
+            else if (soGhe <= 10)
+            {
+                return 6500;
+            }
+            return 8000;
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            ResetGhe();
+        }
+
+        private void ResetGhe()
+        {
+            foreach (Button btnGhe in pnGhe.Controls.OfType<Button>().Where(x => x.BackColor == Color.Yellow))
+            {
+                btnGhe.BackColor = Color.White;
+                btnGhe.ForeColor = Color.Black;
+            }
+            txtTongTien.Text = "0";
         }
     }
 }

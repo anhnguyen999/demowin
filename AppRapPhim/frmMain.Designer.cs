@@ -32,8 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pnGhe = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtTongTien = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -83,26 +82,17 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Thành tiền:";
             // 
-            // textBox1
+            // txtTongTien
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(446, 409);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(293, 41);
-            this.textBox1.TabIndex = 3;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(251, 459);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 52);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "CHỌN";
-            this.button1.UseVisualStyleBackColor = true;
+            this.txtTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTongTien.Location = new System.Drawing.Point(446, 409);
+            this.txtTongTien.Name = "txtTongTien";
+            this.txtTongTien.Size = new System.Drawing.Size(293, 41);
+            this.txtTongTien.TabIndex = 3;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(433, 459);
+            this.button2.Location = new System.Drawing.Point(446, 459);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(129, 52);
             this.button2.TabIndex = 4;
@@ -118,6 +108,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "HỦY BỎ";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // frmMain
             // 
@@ -126,8 +117,7 @@
             this.ClientSize = new System.Drawing.Size(751, 523);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTongTien);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pnGhe);
             this.Controls.Add(this.panel1);
@@ -147,8 +137,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnGhe;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtTongTien;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
     }
