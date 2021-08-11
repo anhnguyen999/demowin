@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppPhim.UI", "AppRapPhim\Ap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppPhim.DataAccessLayer", "AppPhim.DataAccessLayer\AppPhim.DataAccessLayer.csproj", "{84D7F8ED-AECC-45D9-ADFD-C481CE5A2D69}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppPhim.BusinessAccessLayer", "AppPhim.BusinessAccessLayer\AppPhim.BusinessAccessLayer.csproj", "{548CBF53-52B9-4272-9175-EA6F7FC3229D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{84D7F8ED-AECC-45D9-ADFD-C481CE5A2D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84D7F8ED-AECC-45D9-ADFD-C481CE5A2D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84D7F8ED-AECC-45D9-ADFD-C481CE5A2D69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{548CBF53-52B9-4272-9175-EA6F7FC3229D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{548CBF53-52B9-4272-9175-EA6F7FC3229D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{548CBF53-52B9-4272-9175-EA6F7FC3229D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{548CBF53-52B9-4272-9175-EA6F7FC3229D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AppPhim.DataAccessLayer
 {
-    class TaiKhoanDAL
+    public class TaiKhoanDAL
     {
         public bool KiemTraDangNhap(TaiKhoan taiKhoan, out string error)
         {
